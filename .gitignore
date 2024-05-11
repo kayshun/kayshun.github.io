@@ -1,2 +1,24 @@
-*code-workspace
+# Rust
+/target/
+
+# Generated Files
+/dist/
+/node_modules/
+
+# Unnecessary Files for VCS
 .DS_Store
+package-lock.json
+package.json
+
+# outputs
+/output/
+**.log
+
+# Editors
+.idea
+.vscode
+.lapce
+.zed
+
+# Sensitive or environment-specific data
+.env
