@@ -24,7 +24,7 @@ pub fn ContactUs() -> impl IntoView {
 
             <Space vertical=true>
 
-                <Grid class="p-3 text-xl text-gray-700 max-w-4xl">
+                <Grid class="p-3 text-xl text-gray-700 max-w-3xl">
 
                     <GridItem>
                     <label for="name">"Your name: "</label>

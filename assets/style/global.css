@@ -20,34 +20,3 @@
   src: url("../../public/fonts/Oswald/static/Oswald-Regular.ttf");
 }
 
-.responsive-img {
-        width: 18%; /* Start with a base size */
-        height: auto; /* Maintain aspect ratio */
-    }
-    @media (min-width: 640px) { /* Corresponds to Tailwind's 'sm' breakpoint */
-        .responsive-img {
-            width: 12%;
-        }
-    }
-    @media (min-width: 768px) { /* 'md' breakpoint */
-        .responsive-img {
-            width: 9%;
-        }
-    }
-    @media (min-width: 1024px) { /* 'lg' breakpoint */
-        .responsive-img {
-            width: 6%;
-        }
-    }
-    @media (min-width: 1280px) { /* 'xl' breakpoint */
-        .responsive-img {
-            width: 4%;
-        }
-    }
-
-.fixed-top {
-    position: fixed;
-    top: 0;
-    width: 100%; /* Make sure it spans the full width of the viewport */
-    z-index: 1000; /* Ensures it stays on top of other content */
-}

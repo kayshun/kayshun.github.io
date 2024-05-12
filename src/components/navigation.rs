@@ -1,7 +1,6 @@
 //! Holds the main navigation component for the front-end application
 use leptos::*;
-use thaw::Icon;
-use thaw::LayoutHeader;
+use thaw::{Grid, GridItem, Icon, Image, LayoutHeader, Space, SpaceJustify};
 
 use crate::pages::Page;
 
@@ -9,17 +8,33 @@ use crate::pages::Page;
 #[component]
 pub fn MainNavigation() -> impl IntoView {
     view! {
-        <LayoutHeader class="fixed-top relative flex items-end justify-between p-5 border-b bg-gray-50">
-            <div class="flex items-end">
-                // ------------------ Logo box ------------------
-                <a href=Page::Home.path() class="flex items-center space-x-2">
-                    <img class="responsive-img" src="/images/kayshun_flame_icon_orig.png" alt="Kayshun" />
-                    <span class="font-oswald text-6xl"> kayshun</span>
-                </a>
-            </div>
+        <LayoutHeader class="relative flex items-end justify-between p-5 border-b bg-gray-50">
+            <Space>
+            <Grid cols=3 x_gap=12 >
 
+            <GridItem>
+                <Space justify=SpaceJustify::Start>
+                <div class="flex items-end">
+                    // ------------------ Logo box ------------------
+                    <a href=Page::Home.path() class="flex items-center space-x-2">
+                        // <img class="responsive-img" src="/images/kayshun_flame_icon_orig.png" alt="Kayshun" />
+                        <Image src="/images/kayshun_flame_icon_orig.png" width="60px" alt="Kayshun" />
+                        <span class="font-oswald text-6xl"> kayshun</span>
+                    </a>
+                </div>
+                </Space>
+            </GridItem>
+
+            <GridItem>
+                <Space justify=SpaceJustify::Center>
+                    <span class="pl-3"/>
+                </Space>
+            </GridItem>
+
+            <GridItem>
+            <Space justify=SpaceJustify::End>
             // ------------------ Navigation links ------------------
-            <div class="flex space-x-1 mb-2 border border-gray-200 rounded-md">
+            <div class="flex justify-end pt-2 mb-2 border border-gray-200 rounded-md">
 
                     <a href=Page::Home.path()
                        title="Go to home page"
@@ -46,6 +61,11 @@ pub fn MainNavigation() -> impl IntoView {
                     </a>
 
             </div>
+            </Space>
+            </GridItem>
+
+            </Grid>
+            </Space>
         </LayoutHeader>
     }
 }
