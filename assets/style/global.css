@@ -1,0 +1,53 @@
+/* 
+* global.css
+*
+* Place any imports, or custom CSS in this file.
+*
+*/
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+/* Font handling */
+@import url("https://fonts.googleapis.com/css2?family=Oswald&display=swap");
+@font-face {
+  font-family: "Oswald";
+  src: url("../../public/fonts/Oswald/Oswald-VariableFont_wght.ttf");
+  src: url("../../public/fonts/Oswald/static/Oswald-Bold.ttf");
+  src: url("../../public/fonts/Oswald/static/Oswald-SemiBold.ttf");
+  src: url("../../public/fonts/Oswald/static/Oswald-Light.ttf");
+  src: url("../../public/fonts/Oswald/static/Oswald-ExtraLight.ttf");
+  src: url("../../public/fonts/Oswald/static/Oswald-Medium.ttf");
+  src: url("../../public/fonts/Oswald/static/Oswald-Regular.ttf");
+}
+
+.responsive-img {
+        width: 18%; /* Start with a base size */
+        height: auto; /* Maintain aspect ratio */
+    }
+    @media (min-width: 640px) { /* Corresponds to Tailwind's 'sm' breakpoint */
+        .responsive-img {
+            width: 12%;
+        }
+    }
+    @media (min-width: 768px) { /* 'md' breakpoint */
+        .responsive-img {
+            width: 9%;
+        }
+    }
+    @media (min-width: 1024px) { /* 'lg' breakpoint */
+        .responsive-img {
+            width: 6%;
+        }
+    }
+    @media (min-width: 1280px) { /* 'xl' breakpoint */
+        .responsive-img {
+            width: 4%;
+        }
+    }
+
+.fixed-top {
+    position: fixed;
+    top: 0;
+    width: 100%; /* Make sure it spans the full width of the viewport */
+    z-index: 1000; /* Ensures it stays on top of other content */
+}
