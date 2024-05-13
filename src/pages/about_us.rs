@@ -16,17 +16,25 @@ pub fn AboutUs() -> impl IntoView {
 
             <Space>
 
-                <Grid cols=2 class="p-2">
+                <Grid class="p-2">
 
-                    <GridItem column=2>
-                        <h1 class="font-oswald text-4xl text-gray-800 pb-4">"About us"</h1>
-                    </GridItem>
-
-                    <GridItem class="p-2" column=2>
+                    <GridItem class="p-2">
                         <h2 class="font-oswald text-3xl text-gray-800 pb-2">"Our founders"</h2>
                     </GridItem>
 
-                    <GridItem class="p-2">
+                    <GridItem class="p-2 max-w-prose">
+                        <p class=" p-2 text-xl">"Our founders are a husband and wife team with a wealth of experience. They've had an earlier attempt at an education startup when they lived in China, which provided teachers technical support for STEAM projects. The company offered coding solutions, as well as supporting teachers with programming Arduino devices for class projects. Unfortunately, while the enterprise was looking promising, the global pandemic locked the world down while they were back in New Zealand on holiday, and their efforts were frustrated."</p>
+                    </GridItem>
+
+                </Grid>
+
+            </Space>
+
+            <Space>
+
+                <Grid cols=2 class="p-2">
+
+                    <GridItem class="pl-6">
                         <h3 class="font-oswald text-2xl text-gray-700 pb-2">"Jean Clarke"</h3>
                         <div class="pt-2">
 
@@ -44,7 +52,7 @@ pub fn AboutUs() -> impl IntoView {
                                     li_url="https://www.linkedin.com/in/jean-clarke-50206b2b2".to_string()
                                 >
                                     <p class="p-2">
-                                    "After 24 years igniting young minds in classrooms across the UK, New Zealand, and China, I'm taking my passion for education innovation to a new level. As a lifelong learner and advocate for girls in STEM, I designed and implemented groundbreaking STEAM programmes in multiple schools, fostering a love for science, technology, engineering, arts, and math."
+                                    "After 24 years igniting young minds in classrooms across the UK, New Zealand, and China, I'm taking my passion for education innovation to a new level. As a lifelong learner and advocate for girls in STEM, I designed and implemented groundbreaking STEAM programmes in multiple schools, fostering a love for science, technology, engineering, arts, and maths."
                                     </p>
                                     <p class="p-2">
                                         "Now, I'm excited to leverage this experience to revolutionise education with Kayshun. Beyond the classroom, you'll find me conquering triathlons – a testament to my dedication and drive. When I'm not challenging myself physically, I'm cheering on my two amazing teenage daughters."
@@ -57,7 +65,7 @@ pub fn AboutUs() -> impl IntoView {
 
                     </GridItem>
 
-                    <GridItem class="p-2">
+                    <GridItem class="pl-6">
                         <h3 class="font-oswald text-2xl text-gray-700 pb-2">"Mick Clarke"</h3>
                         <div class="pt-2">
 
@@ -90,8 +98,8 @@ pub fn AboutUs() -> impl IntoView {
                         </div>
                     </GridItem>
 
-                    <GridItem>
-                        <p class="font-oswald p-4 text-sm text-center italic">Click their image to see their bio</p>
+                    <GridItem class="p-4" column=2>
+                        <p class="font-oswald p-2 text-sm italic">Click their image to see their bio</p>
                     </GridItem>
 
                 </Grid>

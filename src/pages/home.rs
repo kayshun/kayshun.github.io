@@ -8,17 +8,17 @@ pub fn Home() -> impl IntoView {
     view! {
         <Title text="Kayshun - Home"/>
         <Layout>
-            <div class=" left-0 w-full" >
+            <div class="left-0 w-full" >
                 // Note the position and width allows an image to cross the full container
                 // Note: retain the height settings, else the app will skew on other pages.
-                <Image height="150px" width="1000px"
-                    src="https://s3.bmp.ovh/imgs/2021/10/2c3b013418d55659.jpg"/>
+                <Image class="rounded-md" height="250px" width="1000px"
+                    src="/images/classroom_ai.png"/>
             </div>
 
             <Grid class="p-4 max-w-prose">
 
                 <GridItem class="p-2">
-                    <h1 class="font-oswald text-4xl text-gray-800">"Reigniting education"</h1>
+                    <h1 class="font-oswald text-4xl text-gray-800">"Reigniting our passion for education"</h1>
                 </GridItem>
 
                 <GridItem class="p-2">
@@ -31,17 +31,23 @@ pub fn Home() -> impl IntoView {
 
             </Grid>
 
-            <div class=" left-0 w-full" >
+            <div class="left-0 w-full" >
                 // Note the position and width allows an image to cross the full container
                 // Note: retain the height/width settings, else the app will skew on other pages.
-                <Image height="100px" width="1000px"
+                <Image class="rounded-md" height="100px" width="1000px"
                     src="https://s3.bmp.ovh/imgs/2021/10/2c3b013418d55659.jpg"/>
             </div>
 
             <Grid class="p-4 max-w-prose">
 
                 <GridItem class="p-2">
-                    <p class="text-xl text-gray-700 pb-2">"We have done something about this. We are building "<em>Edu</em>", which is a simple to use web application that makes consistent assessment, grading and giving feedback to students easy."</p>
+                    <h3 class="font-oswald text-2xl text-gray-800">"Making a difference with good technology"</h3>
+                </GridItem>
+
+                <GridItem class="p-2">
+                    <p class="text-xl text-gray-700 pb-2">"We have done something about the situation! We are building "<em>Edu</em>", which is a simple to use web application that makes consistent assessment, grading and giving feedback to students easy."</p>
+
+                    <p class="text-xl text-gray-700 pb-2">"We believe that technology can make a difference. But only if the technology is easy to use, intuitive, and doesn't add to the cognitive load on teachers. We designed "<em>Edu</em>" to be as simple to use as possible, while potentially saving upto 30% of a teachers' time."</p>
 
                     <p class="text-xl text-gray-700 pb-2">"We are testing "<em>Edu</em>" with a set of committed teachers who want to use new technologies and apply them for the best outcomes for their students."</p>
 
@@ -53,10 +59,10 @@ pub fn Home() -> impl IntoView {
 
             </Grid>
 
-            <div class=" left-0 w-full" >
+            <div class="left-0 w-full" >
                 // Note the position and width allows an image to cross the full container
                 // Note: retain the height/width settings, else the app will skew on other pages.
-                <Image height="180px" width="1000px"
+                <Image class="rounded-md" height="180px" width="1000px"
                     src="/images/new_zealand_view.jpg"/>
             </div>
 
