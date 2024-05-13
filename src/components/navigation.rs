@@ -8,9 +8,9 @@ use crate::pages::Page;
 #[component]
 pub fn MainNavigation() -> impl IntoView {
     view! {
-        <LayoutHeader class="relative flex items-end justify-between p-5 border-b bg-gray-50">
+        <LayoutHeader class="flex items-end justify-between p-5 border-b bg-gray-50">
             <Space>
-            <Grid cols=3 x_gap=12 >
+            <Grid cols=3 x_gap=25 >
 
             <GridItem>
                 <Space justify=SpaceJustify::Start>
@@ -34,30 +34,34 @@ pub fn MainNavigation() -> impl IntoView {
             <GridItem>
             <Space justify=SpaceJustify::End>
             // ------------------ Navigation links ------------------
-            <div class="flex justify-end pt-2 mb-2 border border-gray-200 rounded-md">
+            <div class="flex justify-end border border-gray-200 rounded-md">
 
                     <a href=Page::Home.path()
                        title="Go to home page"
-                       class="text-gray-800 hover:text-orange-600 font-bold py-1 px-3">
+                       class="text-gray-800 hover:text-orange-600 py-1 px-3">
                         <Icon icon=icondata::RiHome4BuildingsLine height="2.5em" width="3em"/>
+                        <p class="font-oswald text-sm text-center">Home</p>
                     </a>
 
                     <a href=Page::OurProducts.path()
                 title="Our products"
-                    class="text-gray-800 hover:text-orange-600 font-bold py-1 px-3">
-                    <Icon icon=icondata::RiCommandDevelopmentFill height="2.5em" width="3em"/>
+                    class="text-gray-800 hover:text-orange-600 py-1 px-3">
+                        <Icon icon=icondata::RiRedPacketFinanceLine height="2.5em" width="3em"/>
+                        <p class="font-oswald text-sm text-center">Product</p>
                     </a>
 
                     <a href=Page::AboutUs.path()
                        title="About us"
-                       class="text-gray-800 hover:text-orange-600 font-bold py-1 px-3">
+                       class="text-gray-800 hover:text-orange-600 py-1 px-3">
                         <Icon icon=icondata::IoPeopleCircleOutline height="2.5em" width="3em"/>
+                        <p class="font-oswald text-sm text-center">About</p>
                     </a>
 
                     <a href=Page::ContactUs.path()
                        title="Contact us"
-                       class="text-gray-800 hover:text-orange-600 font-bold py-1 px-3">
+                       class="text-gray-800 hover:text-orange-600 py-1 px-3">
                         <Icon icon=icondata::RiMailBusinessLine height="2.5em" width="3em"/>
+                        <p class="font-oswald text-sm text-center">Contact</p>
                     </a>
 
             </div>

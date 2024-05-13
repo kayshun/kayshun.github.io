@@ -1,5 +1,7 @@
 use leptos::*;
+use leptos_meta::Title;
 use thaw::{Grid, GridItem, Icon, Input, InputPrefix, Layout, Space, TextArea};
+use web_sys::MouseEvent;
 
 /// Default Home Page
 #[component]
@@ -9,6 +11,7 @@ pub fn ContactUs() -> impl IntoView {
     let message = create_rw_signal(String::from(""));
 
     view! {
+        <Title text="Kayshun - Contact"/>
         <Layout class="p-5">
 
             <Space>
@@ -44,7 +47,21 @@ pub fn ContactUs() -> impl IntoView {
 
                     <GridItem>
                         <label for="message">"Your message: "</label>
-                        <TextArea attr:id="message" value=message/>
+                        <TextArea class="min-h-[300px]" attr:id="message" value=message/>
+                    </GridItem>
+
+                    <GridItem class="p-4">
+                        <button
+                            id="contact_us"
+                            name="contact_us"
+                            title="Contact Us"
+                            class="font-oswald bg-orange-500 hover:bg-orange-800 text-white p-2 rounded"
+                            on:click=move |ev: MouseEvent| {
+                                ev.prevent_default();
+                                // Call Contact API
+                            }>
+                            "Submit"
+                        </button>
                     </GridItem>
 
                 </Grid>
