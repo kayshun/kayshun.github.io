@@ -30,13 +30,13 @@ pub fn BioPanel(
 
                         <div class="pt-4">
                             <Show when=move || !gh_is_empty >
-                                <a href=gh_url.clone() class="pt-2 text-gray-600 hover:text-orange-600">
+                                <a href=gh_url.clone() target="_blank" class="pt-2 text-gray-600 hover:text-orange-600">
                                     <Icon icon=icondata::FaGithubBrands height="2em" width="2em"/>
                                 </a>
                             </Show>
 
                             <Show when=move || !li_is_empty >
-                                <a href=li_url.clone() class="p-2 text-gray-600 hover:text-orange-600">
+                                <a href=li_url.clone() target="_blank" class="p-2 text-gray-600 hover:text-orange-600">
                                     <Icon icon=icondata::FaLinkedinBrands height="2em" width="2em"/>
                                 </a>
                             </Show>
