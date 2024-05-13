@@ -23,7 +23,7 @@ pub fn Home() -> impl IntoView {
 
                 <GridItem class="p-2">
 
-                    <p class="text-xl text-gray-700 pb-2">"Our mission is guided by years of hands-on teaching experience across multiple countries across the world. We know that consistent assessment and timely, focussed and high-quality feedback to students is vital to their progress. Multiple studies have shown that students who receive such feedback perform better and are much more engaged."</p>
+                    <p class="text-xl text-gray-700 pb-2">"Our mission is guided by years of hands-on teaching experience in multiple countries across the world. We know that consistent assessment and timely, focussed and high-quality feedback to students is vital to their progress. Multiple studies have shown that students who receive such feedback perform better and are much more engaged."</p>
 
                     <p class="text-xl text-gray-700 pb-2">"While we as teachers all strive for the best outcomes for our students, the pressure on our time of grading, providing quality feedback, collating those grades and creating quality reports for school administrators and parents is increasingly eating into the time we need to prepare for the most important aspect of our profession: teaching in the classroom."</p>
 
