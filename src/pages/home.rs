@@ -10,6 +10,7 @@ pub fn Home() -> impl IntoView {
         <Layout>
             <div class=" left-0 w-full" >
                 // Note the position and width allows an image to cross the full container
+                // Note: retain the height/width settings, else the app will skew on other pages.
                 <Image height="100px" width="1000px"
                     src="https://s3.bmp.ovh/imgs/2021/10/2c3b013418d55659.jpg"/>
             </div>
@@ -32,6 +33,7 @@ pub fn Home() -> impl IntoView {
 
             <div class=" left-0 w-full" >
                 // Note the position and width allows an image to cross the full container
+                // Note: retain the height/width settings, else the app will skew on other pages.
                 <Image height="100px" width="1000px"
                     src="https://s3.bmp.ovh/imgs/2021/10/2c3b013418d55659.jpg"/>
             </div>
@@ -49,6 +51,7 @@ pub fn Home() -> impl IntoView {
 
             <div class=" left-0 w-full" >
                 // Note the position and width allows an image to cross the full container
+                // Note: retain the height/width settings, else the app will skew on other pages.
                 <Image height="100px" width="1000px"
                     src="https://s3.bmp.ovh/imgs/2021/10/2c3b013418d55659.jpg"/>
             </div>

@@ -10,7 +10,7 @@ pub fn MainNavigation() -> impl IntoView {
     view! {
         <LayoutHeader class="flex items-end justify-between p-5 border-b bg-gray-50">
             <Space>
-            <Grid cols=3 x_gap=25 >
+            <Grid cols=3 x_gap=50 >
 
             <GridItem>
                 <Space justify=SpaceJustify::Start>
