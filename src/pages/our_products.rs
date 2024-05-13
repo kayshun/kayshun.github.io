@@ -19,13 +19,6 @@ pub fn OurCommunity() -> impl IntoView {
                     <GridItem class="p-2">
                         <p class="text-lg text-gray-700 pb-2">"Our "<em>Edu</em>" app makes it simple to grade assignments and give quality and consistent feedback to your students. We know that timely, focussed and high-quality feedback to students is vital to their progress. Multiple studies have shown that students who receive such feedback perform better and are much more engaged."</p>
 
-                        <p class="text-lg text-gray-700 pb-2">"With our "<em>Edu</em>" app, students will have their assignments graded to a high level within minutes of submission. Not only that, to see their grades they will first have to respond to the provided feedback, which makes them think about the strategies they will adopt to improve."</p>
-
-                        <p class="text-lg text-gray-700 pb-2">"The "<em>Edu</em>" app collates all the grades, feedback and student responses, as well as the assignment responses in one place so the teacher can easily see their students' progress. If a student needs help the application will show this so the teacher can plan for the suitable assistance."</p>
-
-                        <p class="text-lg text-gray-700">"The "<em>Edu</em>" app is fully integrated into Google Classroom, so the grades, feedback and student responses are available in the Grade Book."</p>
-
-
                     </GridItem>
 
                     <GridItem class="p-2">
@@ -40,6 +33,17 @@ pub fn OurCommunity() -> impl IntoView {
                               </div>
                             </div>
                         </div>
+
+                    </GridItem>
+
+                    <GridItem class="p-2">
+
+                        <p class="text-lg text-gray-700 pb-2">"With our "<em>Edu</em>" app, students will have their assignments graded to a high level within minutes of submission. Not only that, to see their grades they will first have to respond to the provided feedback, which makes them think about the strategies they will adopt to improve."</p>
+
+                        <p class="text-lg text-gray-700 pb-2">"The "<em>Edu</em>" app collates all the grades, feedback and student responses, as well as the assignment responses in one place so the teacher can easily see their students' progress. If a student needs help the application will show this so the teacher can plan for the suitable assistance."</p>
+
+                        <p class="text-lg text-gray-700">"The "<em>Edu</em>" app is fully integrated into Google Classroom, so the grades, feedback and student responses are available in the Grade Book."</p>
+
 
                     </GridItem>
 
