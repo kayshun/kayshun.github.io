@@ -27,7 +27,7 @@ pub fn AboutUs() -> impl IntoView {
                     </GridItem>
 
                     <GridItem class="max-w-prose p-2">
-                        <p class="text-base">"Our founders are a husband and wife team with a wealth of experience. They've had an earlier attempt at an education startup when they lived in China, which provided teachers technical support for STEAM projects. The company offered coding solutions, as well as supporting teachers with programming Arduino devices for class projects. Unfortunately, while the enterprise was looking promising, the global pandemic locked the world down while they were back in New Zealand on holiday, and their efforts were frustrated."</p>
+                        <p class="text-base">"Our founders are a husband-and-wife team with a wealth of experience. They had an earlier attempt at an education startup when they lived in China, which provided teachers with technical support for STEAM projects. The company offered coding solutions and supported teachers with programming Arduino devices for class projects. Unfortunately, while the enterprise looked promising, the global pandemic locked the world down while they were back in New Zealand on holiday, and their efforts were frustrated."</p>
                     </GridItem>
 
                 </Grid>
@@ -64,7 +64,7 @@ pub fn AboutUs() -> impl IntoView {
                                     "After 24 years igniting young minds in classrooms across the UK, New Zealand, and China, I'm taking my passion for education innovation to a new level. As a lifelong learner and advocate for girls in STEM, I designed and implemented groundbreaking STEAM programmes in multiple schools, fostering a love for science, technology, engineering, arts, and maths."
                                     </p>
                                     <p class="p-2">
-                                        "Now, I'm excited to leverage this experience to revolutionise education with Kayshun. Beyond the classroom, you'll find me conquering triathlons – a testament to my dedication and drive. When I'm not challenging myself physically, I'm cheering on my two amazing teenage daughters."
+                                    "I'm excited to leverage this experience to revolutionise education with Kayshun. Beyond the classroom, you'll find me conquering triathlons – a testament to my dedication and drive. When not challenging myself physically, I cheer on my two amazing teenage daughters."
                                     </p>
 
                                 </BioPanel>
@@ -96,13 +96,13 @@ pub fn AboutUs() -> impl IntoView {
                                     gh_url="https://github.com/avastmick".to_string()
                                 >
                                     <p class="p-2">
-                                       "Mick started his working life in off-shore construction in the oil industry. He has lived and worked in multiple countries across the globe, and currently lives in New Zealand. "
+                                       "Mick started his working life in off-shore construction in the oil industry. He has lived and worked in multiple countries across the globe and currently lives in New Zealand."
                                     </p>
                                     <p class="p-2">
-                                        "Mick successfully moved into technology after a MSc. in Computer Graphics and AI. Since, Mick has worked in multiple industries ranging from media start-ups, to large-scale eCommerce, to banking, national government programmes and back to a number of start-ups."
+                                        "Mick successfully entered technology after obtaining an MSc. in Computer Graphics and AI. Since then, Mick has worked in multiple industries, ranging from media start-ups to large-scale eCommerce, banking, national government programmes, and back to several start-ups."
                                     </p>
                                     <p class="p-2">
-                                        <i>"“Never stop learning, you always know less than you think.”"</i>
+                                        <i>"“Never stop learning; you always know less than you think.”"</i>
                                     </p>
                                 </BioPanel>
                             </Modal>

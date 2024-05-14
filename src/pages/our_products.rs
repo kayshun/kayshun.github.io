@@ -13,15 +13,15 @@ pub fn Edu() -> impl IntoView {
                 <Grid class="p-2 max-w-prose">
 
                     <GridItem>
-                        <h1 class="font-oswald text-3xl text-gray-800 pb-4">"Introducing Edu Kayshun*"</h1>
+                        <h1 class="font-oswald text-3xl text-gray-800 pb-4">"Introducing "<em>Edu</em>" Kayshun*"</h1>
                     </GridItem>
 
                     <GridItem class="p-2">
-                        <p class="text-base text-gray-700 pb-2">"Our "<em>Edu</em>" web app makes it simple to grade assignments and give quality and consistent feedback to your students. We know that timely, focussed and high-quality feedback to students is vital to their progress. Multiple studies have shown that students who receive such feedback perform better and are much more engaged."</p>
+                        <p class="text-base text-gray-700 pb-2">"Our "<em>Edu</em>" web app is designed to simplify your grading process and provide quality, consistent feedback to your students. We understand that timely, focused, high-quality feedback is crucial to students' progress. Numerous studies have demonstrated that students who receive such feedback perform better and are much more engaged. With our app, you can now focus more on teaching and less on administrative tasks."</p>
 
-                        <p class="text-base text-gray-700 pb-2">"Right now, the "<em>Edu</em>" web app provides assessment, grading and feedback for years 10 to 13, covering a wide set of courses for the New Zealand curriculum. We offer assessments are closely aligned to NZQA NCEA Levels 1 to 3."</p>
+                        <p class="text-base text-gray-700 pb-2">"Currently, the "<em>Edu</em>" web app offers assessment, grading, and feedback for years 10 to 13, encompassing a broad range of courses for the New Zealand curriculum. Our assessments are meticulously aligned with NZQA NCEA Levels 1 to 3, providing you with accurate and reliable results."</p>
 
-                        <p class="text-base text-gray-700 pb-2">"Soon, the "<em>Edu</em>" web app will provide similar services for other curriculums, such as England, Ireland, Australia and international."</p>
+                        <p class="text-base text-gray-700 pb-2">"Soon, the "<em>Edu</em>" web app will provide similar services for other curricula, such as English, Ireland, Australia, and international."</p>
 
                     </GridItem>
 
@@ -48,7 +48,7 @@ pub fn Edu() -> impl IntoView {
 
                     <GridItem class="p-2">
 
-                        <p class="text-base text-gray-700 pb-2">"With our "<em>Edu</em>" web app, students will have their assignments graded to a high level, as well as given detailed feedback on how to improve, "<span class="font-bold">"within minutes of submission!"</span>" Not only that, to see their grades they will first have to respond to the provided feedback, which makes them think about the strategies they will adopt to improve."</p>
+                        <p class="text-base text-gray-700 pb-2">"With our "<em>Edu</em>" web app, students will have their assignments graded to a high level and given detailed feedback on how to improve "<span class="font-bold">"within minutes of submission!"</span>" Also, to see their grades, they will first have to respond to the provided feedback, which makes them think about the strategies they will adopt to improve."</p>
 
                     </GridItem>
 
@@ -57,9 +57,9 @@ pub fn Edu() -> impl IntoView {
                     </GridItem>
 
                     <GridItem class="p-2">
-                        <p class="text-base text-gray-700 pb-2">"The "<em>Edu</em>" web app collates all the grades, feedback and student responses, as well as the assignment responses in one place so the teacher can easily see their students' progress. If a student needs help, the application will clearly show this so the teacher can plan for the suitable assistance."</p>
+                        <p class="text-base text-gray-700 pb-2">"The "<em>Edu</em>" web app collates all the grades, feedback, student responses, and assignment responses in one place so the teacher can easily see their students' progress. The application clearly shows if a student needs help so the teacher can plan for suitable assistance."</p>
 
-                        <p class="text-base text-gray-700 pb-2">"While the "<em>Edu</em>" web app, operates as a standalone application, it is also fully integrated into Google Classroom. Students will just have to click on the link as they would with any other assignment. The grades, feedback and student responses will be available in the Grade Book."</p>
+                        <p class="text-base text-gray-700 pb-2">"While the "<em>Edu</em>" web app operates as a standalone application, it is also fully integrated into Google Classroom. Students have to just click on the link as they would with any other assignment. The grades, feedback and student responses will be available in the Grade Book."</p>
 
                     </GridItem>
 
@@ -88,11 +88,11 @@ pub fn Edu() -> impl IntoView {
                     </GridItem>
 
                     <GridItem class="p-2">
-                        <p class="text-base text-gray-700">"We aim to be a community-driven initiative, with a goal of collectively improving education with digital products that are simple to use and solve real-world issues. To achieve our goals, we need you to help us improve  our products and make them even more usable and useful."</p>
+                        <p class="text-base text-gray-700">"We aim to be a community-driven initiative that collectively improves education with digital products that are simple to use and solve real-world issues. Please help us improve our products and make them more usable and valuable to achieve our collective goals."</p>
                     </GridItem>
 
                     <GridItem class="p-2">
-                        <p class="text-base text-gray-700">"Contact us to find out how you can  be a part of our community and get on our early users team."</p>
+                        <p class="text-base text-gray-700">"Discover the exciting opportunity to join our community and be a part of our early users team. As an early user, you'll have the chance to shape our products and contribute to our collective goals."</p>
                     </GridItem>
 
                     <GridItem class="p-2">

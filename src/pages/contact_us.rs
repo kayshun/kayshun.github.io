@@ -20,7 +20,9 @@ pub fn ContactUs() -> impl IntoView {
                         <h1 class="font-oswald text-3xl text-gray-800 pb-4">"Contact us"</h1>
                     </GridItem>
                     <GridItem class="p-2">
-                        <p class="text-base text-gray-700">"Please fill out the form below"</p>
+                        <p class="text-base text-gray-700 pb-2">"Want to find out more about our plans, or join our growing community of teachers?"</p>
+
+                        <p class="text-base text-gray-700">"To do so, please fill out the form below."</p>
                     </GridItem>
                 </Grid>
             </Space>
