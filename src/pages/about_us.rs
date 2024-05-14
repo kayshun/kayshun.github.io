@@ -18,12 +18,16 @@ pub fn AboutUs() -> impl IntoView {
 
                 <Grid class="p-2">
 
-                    <GridItem class="p-2">
-                        <h2 class="font-oswald text-2xl text-gray-800 pb-2">"Our founders"</h2>
+                    <GridItem class="pb-2">
+                        <h1 class="font-oswald text-3xl text-gray-800">"About"</h1>
                     </GridItem>
 
-                    <GridItem class="p-2 max-w-prose">
-                        <p class=" p-2 text-base">"Our founders are a husband and wife team with a wealth of experience. They've had an earlier attempt at an education startup when they lived in China, which provided teachers technical support for STEAM projects. The company offered coding solutions, as well as supporting teachers with programming Arduino devices for class projects. Unfortunately, while the enterprise was looking promising, the global pandemic locked the world down while they were back in New Zealand on holiday, and their efforts were frustrated."</p>
+                    <GridItem>
+                        <h2 class="font-oswald text-2xl text-gray-800 p-2">"Our founders"</h2>
+                    </GridItem>
+
+                    <GridItem class="max-w-prose p-2">
+                        <p class="text-base">"Our founders are a husband and wife team with a wealth of experience. They've had an earlier attempt at an education startup when they lived in China, which provided teachers technical support for STEAM projects. The company offered coding solutions, as well as supporting teachers with programming Arduino devices for class projects. Unfortunately, while the enterprise was looking promising, the global pandemic locked the world down while they were back in New Zealand on holiday, and their efforts were frustrated."</p>
                     </GridItem>
 
                 </Grid>
@@ -47,7 +51,10 @@ pub fn AboutUs() -> impl IntoView {
                                     src="/images/jean_headshot.jpg" width="100px" height="100px"/>
 
                             </Button>
-                            <Modal title="" show=show_jean>
+                            <Modal
+                                title=""
+                                width="425px"
+                                show=show_jean>
                                 <BioPanel
                                     name="Jean Clarke".to_string()
                                     image_path="/images/jean_headshot.jpg".to_string()
@@ -78,7 +85,10 @@ pub fn AboutUs() -> impl IntoView {
                                     src="/images/mick_headshot_sepia.jpg" width="100px" height="100px"/>
 
                             </Button>
-                            <Modal title="" show=show_mick>
+                            <Modal
+                                title=""
+                                width="425px"
+                                show=show_mick>
                                 <BioPanel
                                     name="Mick Clarke".to_string()
                                     image_path="/images/mick_headshot_sepia.jpg".to_string()

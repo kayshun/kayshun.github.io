@@ -11,11 +11,12 @@ use crate::pages::about_us::AboutUs;
 use crate::pages::contact_us::ContactUs;
 use crate::pages::home::Home;
 use crate::pages::not_found::FouroFour;
-use crate::pages::our_products::OurCommunity;
+use crate::pages::our_products::Edu;
 use crate::pages::Page;
 
 use crate::components::navigation::MainNavigation;
 
+/// The main App, the start-point if the webapp
 #[component]
 pub fn App() -> impl IntoView {
     provide_meta_context();
@@ -28,7 +29,7 @@ pub fn App() -> impl IntoView {
                     <MainNavigation/>
                     <Routes>
                         <Route path=Page::Home.path() view=Home/>
-                        <Route path=Page::OurProducts.path() view=OurCommunity/>
+                        <Route path=Page::OurProducts.path() view=Edu/>
                         <Route path=Page::AboutUs.path() view=AboutUs/>
                         <Route path=Page::ContactUs.path() view=ContactUs/>
 

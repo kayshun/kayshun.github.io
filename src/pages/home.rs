@@ -1,17 +1,17 @@
 use leptos::*;
 use leptos_meta::Title;
-use thaw::{Grid, GridItem, Layout};
+use thaw::{Grid, GridItem, Layout, Space};
 
 /// Default Home Page
 #[component]
 pub fn Home() -> impl IntoView {
     view! {
         <Title text="Kayshun - Home"/>
-        <Layout>
+        <Layout class="p-5">
+            <Space>
+            <Grid class="p-2 max-w-prose">
 
-            <Grid class="p-4 max-w-prose">
-
-                <GridItem class="p-2">
+                <GridItem class="pb-2">
                     <h1 class="font-oswald text-3xl text-gray-800">"Reigniting education"</h1>
                 </GridItem>
 
@@ -52,7 +52,7 @@ pub fn Home() -> impl IntoView {
                 </GridItem>
 
             </Grid>
-
+            </Space>
         </Layout>
     }
 }

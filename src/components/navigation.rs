@@ -9,7 +9,7 @@ use crate::pages::Page;
 #[component]
 pub fn MainNavigation() -> impl IntoView {
     view! {
-        <LayoutHeader class="flex items-end justify-between p-5 border-b bg-gray-50">
+        <LayoutHeader class="flex items-end justify-between p-3 border-b bg-gray-50">
             <Space>
             <Grid cols=3 x_gap=30 >
 
@@ -18,9 +18,8 @@ pub fn MainNavigation() -> impl IntoView {
                 <div class="flex items-end">
                     // ------------------ Logo box ------------------
                     <a href=Page::Home.path() class="flex items-center space-x-2">
-                        // <img class="responsive-img" src="/images/kayshun_flame_icon_orig.png" alt="Kayshun" />
-                        <Image src="/images/kayshun_flame_icon_orig.png" width="50px" alt="Kayshun" />
-                        <span class="font-oswald text-5xl"> kayshun</span>
+                        <Image src="/images/kayshun_flame_icon_orig.png" width="40px" alt="Kayshun" />
+                        <span class="font-oswald text-4xl"> Kayshun</span>
                     </a>
                 </div>
                 </Space>

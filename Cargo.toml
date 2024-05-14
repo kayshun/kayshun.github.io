@@ -8,9 +8,9 @@ authors = ["Mick Clarke <avastmick@outlook.com>"]
 
 [dependencies]
 chrono = { version = "0.4.38" } # Care with version for wasm-bindgen
-leptos = { version = "0.6", features = ["csr", "nightly"] }
-leptos_meta = { version = "0.6", features = ["csr", "nightly"] }
-leptos_router = { version = "0.6", features = ["csr", "nightly"] }
+leptos = { version = "0.6", features = ["csr"] }
+leptos_meta = { version = "0.6", features = ["csr"] }
+leptos_router = { version = "0.6", features = ["csr"] }
 console_log = "1"
 log = "0.4"
 console_error_panic_hook = "0.1"

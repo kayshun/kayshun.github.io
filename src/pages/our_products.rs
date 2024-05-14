@@ -5,7 +5,7 @@ use thaw::{Grid, GridItem, Icon, Layout, Space};
 use crate::pages::Page;
 /// Default Home Page
 #[component]
-pub fn OurCommunity() -> impl IntoView {
+pub fn Edu() -> impl IntoView {
     view! {
         <Title text="Kayshun - Product"/>
         <Layout class="p-5">

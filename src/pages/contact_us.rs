@@ -29,18 +29,18 @@ pub fn ContactUs() -> impl IntoView {
 
                 <Grid class="p-3 text-base text-gray-700 max-w-3xl">
 
-                    <GridItem>
+                    <GridItem class="pb-2">
                     <label for="name">"Your name: "</label>
-                    <Input attr:id="name" value=name>
+                    <Input attr:id="name" attr:name="name" attr:autocomplete="on" value=name>
                         <InputPrefix slot>
                             <Icon icon=icondata::AiUserOutlined/>
                         </InputPrefix>
                     </Input>
                     </GridItem>
 
-                    <GridItem>
+                    <GridItem class="pb-2">
                         <label for="email">"Your email: "</label>
-                        <Input attr:id="email" value=email>
+                        <Input attr:id="email" attr:name="email" attr:autocomplete="on" value=email>
                             <InputPrefix slot><Icon icon=icondata::RiMailBusinessLine/> </InputPrefix>
                         </Input>
                     </GridItem>

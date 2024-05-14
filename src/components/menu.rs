@@ -3,34 +3,35 @@ use thaw::{Button, ButtonVariant, Drawer, Grid, GridItem, Icon, Space};
 
 use crate::Page;
 
+/// Displays the menu for desktop
 #[component]
 pub fn WebMenu() -> impl IntoView {
     view! {
-        <div class="flex justify-end border border-gray-200 rounded-md">
+        <div class="flex justify-end">
             <a href=Page::Home.path()
                title="Go to home page"
-               class="text-gray-800 hover:text-orange-600 py-1 px-3">
+               class="text-gray-800 hover:text-orange-600 px-3">
                 <Icon icon=icondata::RiHome4BuildingsLine height="2em" width="2.5em"/>
                 <p class="font-oswald text-sm text-center">Home</p>
             </a>
 
             <a href=Page::OurProducts.path()
                 title="Our products"
-                class="text-gray-800 hover:text-orange-600 py-1 px-3">
+                class="text-gray-800 hover:text-orange-600 px-3">
                 <Icon icon=icondata::RiRedPacketFinanceLine height="2em" width="2.5em"/>
                 <p class="font-oswald text-sm text-center">Product</p>
             </a>
 
             <a href=Page::AboutUs.path()
                title="About us"
-               class="text-gray-800 hover:text-orange-600 py-1 px-3">
+               class="text-gray-800 hover:text-orange-600 px-3">
                 <Icon icon=icondata::IoPeopleCircleOutline height="2em" width="2.5em"/>
                 <p class="font-oswald text-sm text-center">About</p>
             </a>
 
             <a href=Page::ContactUs.path()
                title="Contact us"
-               class="text-gray-800 hover:text-orange-600 py-1 px-3">
+               class="text-gray-800 hover:text-orange-600 px-3">
                 <Icon icon=icondata::RiMailBusinessLine height="2em" width="2.5em"/>
                 <p class="font-oswald text-sm text-center">Contact</p>
             </a>
@@ -38,6 +39,7 @@ pub fn WebMenu() -> impl IntoView {
     }
 }
 
+/// Displays the menu for mobile
 #[component]
 pub fn MobileMenu() -> impl IntoView {
     let show = create_rw_signal(false);
