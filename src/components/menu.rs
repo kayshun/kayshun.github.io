@@ -57,45 +57,61 @@ pub fn MobileMenu() -> impl IntoView {
 
                     <GridItem class="p-2">
 
+                <Button
+                    variant=ButtonVariant::Link
+                    on_click=move |_| show.set(false)>
                         <a href=Page::Home.path()
                            title="Go to home page"
                            class="text-gray-800 hover:text-orange-600">
                             <Icon icon=icondata::RiHome4BuildingsLine height="2em" width="2.5em"/>
                             <p class="font-oswald text-md">Home</p>
                         </a>
+                </Button>
 
                     </GridItem>
 
                     <GridItem class="p-2">
 
+                <Button
+                    variant=ButtonVariant::Link
+                    on_click=move |_| show.set(false)>
                         <a href=Page::OurProducts.path()
                             title="Our products"
                             class="text-gray-800 hover:text-orange-600">
                             <Icon icon=icondata::RiRedPacketFinanceLine height="2em" width="2.5em"/>
                             <p class="font-oswald text-md">Product</p>
                         </a>
+                </Button>
 
                     </GridItem>
 
                     <GridItem class="p-2">
 
+                <Button
+                    variant=ButtonVariant::Link
+                    on_click=move |_| show.set(false)>
                         <a href=Page::AboutUs.path()
                            title="About us"
                            class="text-gray-800 hover:text-orange-600">
                             <Icon icon=icondata::IoPeopleCircleOutline height="2em" width="2.5em"/>
                             <p class="font-oswald text-md">About</p>
                         </a>
+                </Button>
 
                     </GridItem>
 
                     <GridItem class="p-2">
 
+                <Button
+                    variant=ButtonVariant::Link
+                    on_click=move |_| show.set(false)>
                         <a href=Page::ContactUs.path()
                            title="Contact us"
                            class="text-gray-800 hover:text-orange-600">
                             <Icon icon=icondata::RiMailBusinessLine height="2em" width="2.5em"/>
                             <p class="font-oswald text-md">Contact</p>
                         </a>
+                </Button>
 
                     </GridItem>
 
