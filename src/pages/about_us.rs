@@ -19,11 +19,11 @@ pub fn AboutUs() -> impl IntoView {
                 <Grid class="p-2">
 
                     <GridItem class="p-2">
-                        <h2 class="font-oswald text-3xl text-gray-800 pb-2">"Our founders"</h2>
+                        <h2 class="font-oswald text-2xl text-gray-800 pb-2">"Our founders"</h2>
                     </GridItem>
 
                     <GridItem class="p-2 max-w-prose">
-                        <p class=" p-2 text-xl">"Our founders are a husband and wife team with a wealth of experience. They've had an earlier attempt at an education startup when they lived in China, which provided teachers technical support for STEAM projects. The company offered coding solutions, as well as supporting teachers with programming Arduino devices for class projects. Unfortunately, while the enterprise was looking promising, the global pandemic locked the world down while they were back in New Zealand on holiday, and their efforts were frustrated."</p>
+                        <p class=" p-2 text-base">"Our founders are a husband and wife team with a wealth of experience. They've had an earlier attempt at an education startup when they lived in China, which provided teachers technical support for STEAM projects. The company offered coding solutions, as well as supporting teachers with programming Arduino devices for class projects. Unfortunately, while the enterprise was looking promising, the global pandemic locked the world down while they were back in New Zealand on holiday, and their efforts were frustrated."</p>
                     </GridItem>
 
                 </Grid>
@@ -35,13 +35,15 @@ pub fn AboutUs() -> impl IntoView {
                 <Grid cols=2 class="p-2">
 
                     <GridItem class="pl-6">
-                        <h3 class="font-oswald text-2xl text-gray-700 pb-2">"Jean Clarke"</h3>
+                        <h3 class="font-oswald text-xl text-gray-700 pb-2">"Jean Clarke"</h3>
                         <div class="pt-2">
 
-                            <Button variant=ButtonVariant::Link on_click=move |_| { show_jean.set(true) }>
+                            <Button
+                                variant=ButtonVariant::Link
+                                on_click=move |_| { show_jean.set(true) }>
 
                                 <Image
-                                    class="h-36 w-36 rounded-full"
+                                    class="transition ease-in-out delay-50 hover:-translate-y-1 hover:scale-125 h-36 w-36 rounded-full"
                                     src="/images/jean_headshot.jpg" width="100px" height="100px"/>
 
                             </Button>
@@ -66,13 +68,13 @@ pub fn AboutUs() -> impl IntoView {
                     </GridItem>
 
                     <GridItem class="pl-6">
-                        <h3 class="font-oswald text-2xl text-gray-700 pb-2">"Mick Clarke"</h3>
+                        <h3 class="font-oswald text-xl text-gray-700 pb-2">"Mick Clarke"</h3>
                         <div class="pt-2">
 
                             <Button variant=ButtonVariant::Link on_click=move |_| { show_mick.set(true) }>
 
                                 <Image
-                                    class="h-36 w-36 rounded-full"
+                                    class="transition ease-in-out delay-50 hover:-translate-y-1 hover:scale-125 h-36 w-36 rounded-full"
                                     src="/images/mick_headshot_sepia.jpg" width="100px" height="100px"/>
 
                             </Button>

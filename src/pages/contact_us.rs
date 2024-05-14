@@ -17,17 +17,17 @@ pub fn ContactUs() -> impl IntoView {
             <Space>
                 <Grid class="p-2">
                     <GridItem>
-                        <h1 class="font-oswald text-4xl text-gray-800 pb-4">"Contact us"</h1>
+                        <h1 class="font-oswald text-3xl text-gray-800 pb-4">"Contact us"</h1>
                     </GridItem>
                     <GridItem class="p-2">
-                        <p class="text-xl text-gray-700">"Please fill out the form below"</p>
+                        <p class="text-base text-gray-700">"Please fill out the form below"</p>
                     </GridItem>
                 </Grid>
             </Space>
 
             <Space vertical=true>
 
-                <Grid class="p-3 text-xl text-gray-700 max-w-3xl">
+                <Grid class="p-3 text-base text-gray-700 max-w-3xl">
 
                     <GridItem>
                     <label for="name">"Your name: "</label>
@@ -55,7 +55,7 @@ pub fn ContactUs() -> impl IntoView {
                             id="contact_us"
                             name="contact_us"
                             title="Contact Us"
-                            class="font-oswald bg-orange-500 hover:bg-orange-800 text-white p-2 rounded"
+                            class="transition ease-in-out delay-50 hover:-translate-y-1 hover:scale-110 font-oswald bg-orange-500 hover:bg-orange-800 text-white p-2 rounded"
                             on:click=move |ev: MouseEvent| {
                                 ev.prevent_default();
                                 // Call Contact API

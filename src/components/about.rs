@@ -19,7 +19,7 @@ pub fn BioPanel(
                 <Grid cols=1 class="p-2">
 
                     <GridItem>
-                        <h3 class="font-oswald text-2xl text-gray-800 pb-4">{name}</h3>
+                        <h3 class="font-oswald text-xl text-gray-800 pb-4">{name}</h3>
                     </GridItem>
 
                     <GridItem class="p-2">
