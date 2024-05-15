@@ -18,7 +18,7 @@ pub fn WebMenu() -> impl IntoView {
             <a href=Page::OurProducts.path()
                 title="Our products"
                 class="text-gray-800 hover:text-orange-600 px-3">
-                <Icon icon=icondata::RiRedPacketFinanceLine height="2em" width="2.5em"/>
+                <Icon icon=icondata::FaFireFlameCurvedSolid height="2em" width="2.5em"/>
                 <p class="font-oswald text-sm text-center">Product</p>
             </a>
 
@@ -80,7 +80,7 @@ pub fn MobileMenu() -> impl IntoView {
                         <a href=Page::OurProducts.path()
                             title="Our products"
                             class="text-gray-800 hover:text-orange-600">
-                            <Icon icon=icondata::RiRedPacketFinanceLine height="2em" width="2.5em"/>
+                            <Icon icon=icondata::FaFireFlameCurvedSolid height="2em" width="2.5em"/>
                             <p class="font-oswald text-md">Product</p>
                         </a>
                 </Button>
