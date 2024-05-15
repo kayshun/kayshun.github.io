@@ -16,13 +16,13 @@ pub fn BioPanel(
 
             <Space>
 
-                <Grid cols=1 class="p-2">
+                <Grid cols=1>
 
                     <GridItem>
                         <h3 class="font-oswald text-xl text-gray-800 pb-4">{name}</h3>
                     </GridItem>
 
-                    <GridItem class="p-2">
+                    <GridItem>
 
                         <Image
                             class="h-36 w-36 rounded-full"
