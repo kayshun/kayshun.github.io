@@ -12,19 +12,19 @@ pub fn ContactUs() -> impl IntoView {
             <Space>
                 <Grid class="p-2">
                     <GridItem>
-                        <h1 class="font-oswald text-3xl text-gray-800 pb-4">"Contact us"</h1>
+                        <h1 class="font-oswald text-3xl pb-4">"Contact us"</h1>
                     </GridItem>
                     <GridItem class="p-2">
-                        <p class="text-base text-gray-700 pb-2">"Want to find out more about our plans, or join our growing community of teachers?"</p>
+                        <p class="text-base pb-2">"Want to find out more about our plans, or join our growing community of teachers?"</p>
 
-                        <p class="text-base text-gray-700">"To do so, please fill out the form below."</p>
+                        <p class="text-base">"To do so, please fill out the form below."</p>
                     </GridItem>
                 </Grid>
             </Space>
 
             <Space vertical=true>
 
-                <Grid class="p-3 text-base text-gray-700 max-w-3xl border border-gray-200 rounded-lg ">
+                <Grid class="p-3 text-base text-gray-700 max-w-3xl rounded-lg bg-gray-50">
 
                     // JS for Google recaptcha
                     <script src="https://www.google.com/recaptcha/api.js" async defer></script>

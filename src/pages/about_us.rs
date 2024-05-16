@@ -12,13 +12,13 @@ pub fn AboutUs() -> impl IntoView {
     view! {
         <Title text="Kayshun - About"/>
 
-        <Layout class="p-5">
+        <Layout>
 
             <Space>
 
-                <Grid class="p-2">
+                <Grid class="w-screen">
 
-                    <GridItem class="pb-2">
+                    <GridItem class="p-7 pb-4">
                         <h1 class="font-oswald text-3xl text-gray-800">"About"</h1>
                     </GridItem>
 
@@ -28,21 +28,21 @@ pub fn AboutUs() -> impl IntoView {
 
             <Space>
 
-                <Collapse accordion=true value>
+                <Collapse accordion=true value class="pb-5">
 
-                    <CollapseItem class="font-oswald text-2xl text-gray-800 p-2" title="Our founders" key="founders">
+                    <CollapseItem class="border-none font-oswald text-2xl text-gray-800" title="Our founders" key="founders">
                         <founders::About/>
                     </CollapseItem>
 
-                    <CollapseItem class="font-oswald text-2xl text-gray-800 p-2" title="Our advisors" key="advisors">
+                    <CollapseItem class="border-none font-oswald text-2xl text-gray-800" title="Our advisors" key="advisors">
                         <advisors::About/>
                     </CollapseItem>
 
-                    <CollapseItem class="font-oswald text-2xl text-gray-800 p-2" title="Our community champions" key="community">
+                    <CollapseItem class="border-hidden font-oswald text-2xl text-gray-800" title="Our community champions" key="community">
                         <community::About/>
                     </CollapseItem>
 
-                    <CollapseItem class="font-oswald text-2xl text-gray-800 p-2" title="Technology & compliance" key="tech">
+                    <CollapseItem class="border-hidden font-oswald text-2xl text-gray-800" title="Technology & compliance" key="tech">
                         <tech_comp::About/>
                     </CollapseItem>
 

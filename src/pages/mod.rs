@@ -1,5 +1,6 @@
 pub mod about_us;
 pub mod contact_us;
+pub mod faqs;
 pub mod home;
 pub mod not_found;
 pub mod our_products;
@@ -8,19 +9,21 @@ pub mod our_products;
 pub enum Page {
     #[default]
     Home,
-    NotFound,
-    AboutUs,
-    ContactUs,
     OurProducts,
+    AboutUs,
+    Faqs,
+    ContactUs,
+    NotFound,
 }
 // Provides a means to get the path for a given page.
 impl Page {
     pub fn path(&self) -> &'static str {
         match self {
             Self::Home => "/",
-            Self::AboutUs => "/about_us",
-            Self::ContactUs => "/contact_us",
             Self::OurProducts => "/our_products",
+            Self::AboutUs => "/about_us",
+            Self::Faqs => "/faqs",
+            Self::ContactUs => "/contact_us",
             Self::NotFound => "/*any",
         }
     }

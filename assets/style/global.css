@@ -7,6 +7,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
 /* Font handling */
 @import url("https://fonts.googleapis.com/css2?family=Oswald&display=swap");
 @font-face {
@@ -20,3 +21,44 @@
   src: url("../../public/fonts/Oswald/static/Oswald-Regular.ttf");
 }
 
+/* Custom CSS */
+
+.line-typeout{
+    /* position: relative; */
+    top: 50%;  
+    width: 24em;
+    /* margin: 0 auto; */
+    border-right: 2px solid rgba(255,255,255,.75);
+    /* font-size: 180%; */
+    text-align: left;
+    white-space: nowrap;
+    overflow: hidden;
+    transform: translateY(-50%);    
+}
+
+/* Animation */
+@keyframes fade-in {
+  0% {opacity: 0}
+  50% {opacity: 0}
+  100% {opacity: 1}
+}
+.anim-fade-in-1 {
+  animation-name: fade-in;
+  animation-duration: 1s;
+}
+.anim-fade-in-2 {
+  animation-name: fade-in;
+  animation-duration: 3s;
+}
+.anim-fade-in-3 {
+  animation-name: fade-in;
+  animation-duration: 5s;
+}
+.anim-fade-in-4 {
+  animation-name: fade-in;
+  animation-duration: 7s;
+}
+.anim-fade-in-5 {
+  animation-name: fade-in;
+  animation-duration: 9s;
+}

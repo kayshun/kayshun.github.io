@@ -1,6 +1,6 @@
 use leptos::*;
 use leptos_meta::Title;
-use thaw::{Grid, GridItem, Icon, Layout, Space};
+use thaw::{Grid, GridItem, Icon, Space};
 
 use crate::pages::Page;
 /// Default Home Page
@@ -8,7 +8,7 @@ use crate::pages::Page;
 pub fn Edu() -> impl IntoView {
     view! {
         <Title text="Kayshun - Product"/>
-        <Layout class="p-5">
+        <main class="p-5">
             <Space>
                 <Grid class="p-2 max-w-prose">
 
@@ -108,6 +108,6 @@ pub fn Edu() -> impl IntoView {
 
                 </Grid>
             </Space>
-        </Layout>
+        </main>
     }
 }

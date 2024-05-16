@@ -1,6 +1,6 @@
 //! Holds the main navigation component for the front-end application
 use leptos::*;
-use thaw::{Grid, GridItem, Image, LayoutHeader, Space, SpaceJustify};
+use thaw::{Grid, GridItem, Image, Space, SpaceJustify};
 
 use crate::components::menu::{MobileMenu, WebMenu};
 use crate::pages::Page;
@@ -9,9 +9,9 @@ use crate::pages::Page;
 #[component]
 pub fn MainNavigation() -> impl IntoView {
     view! {
-        <LayoutHeader class="flex items-end justify-between p-3 border-b bg-gray-50">
+        <header class="lg:mx-96 flex items-end justify-between p-3 bg-gray-50">
             <Space>
-            <Grid cols=3 x_gap=30 >
+            <Grid cols=3 x_gap=50 >
 
             <GridItem>
                 <Space justify=SpaceJustify::Start>
@@ -19,7 +19,7 @@ pub fn MainNavigation() -> impl IntoView {
                     // ------------------ Logo box ------------------
                     <a href=Page::Home.path() class="flex items-center space-x-2">
                         <Image src="/images/kayshun_flame_icon_orig.png" width="40px" alt="Kayshun" />
-                        <span class="font-oswald text-4xl"> Kayshun</span>
+                        <span class="font-oswald text-4xl text-orange-600"> Kayshun</span>
                     </a>
                 </div>
                 </Space>
@@ -34,10 +34,10 @@ pub fn MainNavigation() -> impl IntoView {
             <GridItem>
             <Space justify=SpaceJustify::End>
             // ------------------ Navigation links ------------------
-                <div class="invisible lg:visible flex">
+                <div class="invisible lg:visible flex space-x-1">
                     <WebMenu/>
                 </div>
-                <div class="visible lg:invisible flex">
+                <div class="visible lg:invisible flex space-x-1">
                     <MobileMenu/>
                 </div>
             </Space>
@@ -45,6 +45,6 @@ pub fn MainNavigation() -> impl IntoView {
 
             </Grid>
             </Space>
-        </LayoutHeader>
+        </header>
     }
 }

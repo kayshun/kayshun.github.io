@@ -10,10 +10,10 @@ pub fn About() -> impl IntoView {
 
     view! {
 
-        <Grid cols=2 class="font text-base text-gray-700 p-2">
+        <Grid cols=2 class="font text-base text-gray-700">
 
-            <GridItem column=2 class="max-w-prose pb-2">
-                <p class="font-sans text-base text-gray-700">"We are lucky to be working with super experienced advisors to help guide our journey."</p>
+            <GridItem column=2 class="pb-2 bg-orange-400">
+                <p class="font-sans text-base text-white max-w-prose">"We are lucky to be working with super experienced advisors to help guide our journey."</p>
             </GridItem>
 
             <GridItem class="pl-8">

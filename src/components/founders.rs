@@ -10,15 +10,17 @@ pub fn About() -> impl IntoView {
 
     view! {
 
-        <Grid cols=2 class="font text-base text-gray-700 p-2">
+        <Grid class="w-screen font text-base text-gray-700">
 
-            <GridItem column=2 class="max-w-prose pb-2">
-                <p class="font-sans text-base text-gray-700">"Our founders are a husband-and-wife team with a wealth of experience. They had an earlier attempt at an education startup when they lived in China, which provided teachers with technical support for STEAM projects. The company offered coding solutions and supported teachers with programming Arduino devices for class projects. Unfortunately, while the enterprise looked promising, the global pandemic locked the world down while they were back in New Zealand on holiday, and their efforts were frustrated."</p>
+            <GridItem class="p-6 bg-gradient-to-r from-40% from-orange-400">
+                <p class="font-sans font-light text-base text-white max-w-prose">"Our founders are a husband-and-wife team with a wealth of experience. They had an earlier attempt at an education startup when they lived in China, which provided teachers with technical support for STEAM projects. The company offered coding solutions and supported teachers with programming Arduino devices for class projects. Unfortunately, while the enterprise looked promising, the global pandemic locked the world down while they were back in New Zealand on holiday, and their efforts were frustrated."</p>
             </GridItem>
 
-            <GridItem class="pl-8">
-                <h3 class="font-oswald text-xl text-gray-700 pb-2">"Jean Clarke"</h3>
-                <div class="pt-2">
+            <GridItem class="ml-8">
+                <div class="container max-w-fit columns-2">
+
+                <div class="p-2">
+                    <h3 class="font-oswald text-xl text-gray-700 p-2">"Jean Clarke"</h3>
 
                     <Button
                         variant=ButtonVariant::Link
@@ -50,11 +52,8 @@ pub fn About() -> impl IntoView {
 
                 </div>
 
-            </GridItem>
-
-            <GridItem class="">
-                <h3 class="font-oswald text-xl text-gray-700 pb-2">"Mick Clarke"</h3>
-                <div class="pt-2">
+                <div class="p-2">
+                    <h3 class="font-oswald text-xl text-gray-700 p-2">"Mick Clarke"</h3>
 
                     <Button variant=ButtonVariant::Link on_click=move |_| { show_mick.set(true) }>
 
@@ -86,9 +85,11 @@ pub fn About() -> impl IntoView {
                     </Modal>
 
                 </div>
+
+                </div>
             </GridItem>
 
-            <GridItem class="p-4" column=2>
+            <GridItem class="p-4">
                 <p class="font-oswald p-2 text-sm italic">Click their image to see their bio</p>
             </GridItem>
 
