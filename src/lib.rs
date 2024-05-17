@@ -28,7 +28,7 @@ pub fn App() -> impl IntoView {
             <div class="flex flex-col h-screen overflow-hidden bg-orange-50">
             <MainNavigation/>
             <Router>
-                <Layout class="lg:mx-96 mb-3 flex-1 overflow-y-scroll">
+                <Layout class="mb-3 flex-1 overflow-y-scroll">
                 <div class="bg-fixed bg-cover overflow-clip" style="background-image: url('./images/hs_classroom_orig.png')">
                     <Routes>
                         <Route path=Page::Home.path() view=Home/>

@@ -14,36 +14,39 @@ pub fn Home() -> impl IntoView {
                 <Grid>
 
                     <GridItem class="p-6">
-                        <h1 class="font-oswald text-3xl ">"Reigniting education"</h1>
+                        <h1 class="font-oswald text-center text-3xl ">"Reigniting education"</h1>
                     </GridItem>
 
                     <GridItem class="pl-8 p-4 bg-gray-50">
-                        <h3 class="font-oswald text-xl pb-4">"Knowing your students' progress needs assessment"</h3>
-                        <p class="text-base pb-2 pl-2 max-w-prose">"Consistent assessment and timely, focussed, and high-quality feedback are vital to students' progress. Numerous studies have shown that students who receive such feedback perform better and are much more engaged. But to achieve our goal takes up time!"</p>
+                        <h3 class="font-oswald text-xl pb-4">"We know students' progress needs assessment"</h3>
+
+                        <p class="text-base pb-2 pl-2 max-w-prose">"Consistent assessment and timely feedback are vital to our students' progress. Numerous studies show that students who receive quality feedback perform better and are more engaged."</p>
                     </GridItem>
 
-                    <GridItem class="pl-16 pt-8 pb-8">
-                        <div class="flex pl-4">
-                        <p class="text-xl text-orange-400 anim-fade-in-1">
-                            <span class="text-2xl">"•"</span>" Make fresh assignments for your students... "</p>
-                            <span class="italic anim-fade-in-5">"✔️"</span>
+                    <GridItem class="flex-col pl-16 pt-8 pb-8">
+                        <div class="flex-auto pl-4 rounded-xl bg-orange-50/50 max-w-prose">
+                            <div class="flex pl-2 p-2">
+                            <p class="text-xl text-orange-400 anim-fade-in-1">
+                                <span class="text-2xl">"•"</span>" Make fresh assignments for your students... "</p>
+                                <span class="italic anim-fade-in-5">"✔️"</span>
+                            </div>
+                            <div class="flex pl-2 p-2">
+                            <p class="text-xl text-orange-400 anim-fade-in-2">
+                                <span class="text-2xl">"•"</span>" Quickly grade and return these assignments... "</p>
+                                <span class="italic anim-fade-in-5">"✔️"</span>
+                            </div>
+                            <div class="flex pl-2 p-2">
+                            <p class="text-xl text-orange-400 anim-fade-in-3">
+                                <span class="text-2xl">"•"</span>" Include timely, insightful and actionable feedback to your students... "</p>
+                                <span class="italic anim-fade-in-5">"✔️"</span>
+                            </div>
+                            <div class="flex pl-2 p-2">
+                            <p class="text-xl text-orange-400 anim-fade-in-4">
+                               <span class="text-2xl">"•"</span>" Collate the student data for reports... "</p>
+                                <span class="italic anim-fade-in-5">"✔️"</span>
+                            </div>
+                            <p class="p-2 pl-6 text-xl italic anim-fade-in-5">"Kayshun can do all that for you! "<span class="text-2xl">"✔️"</span></p>
                         </div>
-                        <div class="flex pl-4">
-                        <p class="text-xl text-orange-400 anim-fade-in-2">
-                            <span class="text-2xl">"•"</span>" Quickly grade and return these assignments... "</p>
-                            <span class="italic anim-fade-in-5">"✔️"</span>
-                        </div>
-                        <div class="flex pl-4">
-                        <p class="text-xl text-orange-400 anim-fade-in-3">
-                            <span class="text-2xl">"•"</span>" Include timely, insightful and actionable feedback to your students... "</p>
-                            <span class="italic anim-fade-in-5">"✔️"</span>
-                        </div>
-                        <div class="flex pl-4">
-                        <p class="text-xl text-orange-400 anim-fade-in-4">
-                           <span class="text-2xl">"•"</span>" Collate the student data for reports... "</p>
-                            <span class="italic anim-fade-in-5">"✔️"</span>
-                        </div>
-                        <p class="pt-2 pl-8 text-xl italic anim-fade-in-5">"Kayshun can do all that for you! "<span class="text-2xl">"✔️"</span></p>
                     </GridItem>
 
                     <GridItem class="pl-8 pb-4">
@@ -51,8 +54,6 @@ pub fn Home() -> impl IntoView {
                     </GridItem>
 
                     <GridItem class="pl-10 pb-4">
-
-                        <p class="text-base pb-2 max-w-prose">"Our mission is guided by years of hands-on teaching experience in multiple countries worldwide. We know the value of what teachers do, and the needs of our students to excel."</p>
 
                         <p class="text-base pb-2 max-w-prose">"While we as teachers all strive for the best outcomes for our students, the pressure on our time of grading, providing quality feedback, collating those grades and creating quality reports for school administrators and parents is increasingly eating into the time we need to prepare for the most critical aspect of our profession: teaching in the classroom."</p>
 

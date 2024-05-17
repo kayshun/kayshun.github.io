@@ -12,44 +12,30 @@ pub fn AboutUs() -> impl IntoView {
     view! {
         <Title text="Kayshun - About"/>
 
-        <Layout>
-
+        <Layout class="w-full lg:max-w-6xl lg:mx-auto">
             <Space>
-
-                <Grid class="w-screen">
-
-                    <GridItem class="p-7 pb-4">
+                <Grid>
+                    <GridItem class="p-4">
                         <h1 class="font-oswald text-3xl text-gray-800">"About"</h1>
                     </GridItem>
-
                 </Grid>
-
             </Space>
-
             <Space>
-
                 <Collapse accordion=true value class="pb-5">
-
                     <CollapseItem class="border-none font-oswald text-2xl text-gray-800" title="Our founders" key="founders">
                         <founders::About/>
                     </CollapseItem>
-
                     <CollapseItem class="border-none font-oswald text-2xl text-gray-800" title="Our advisors" key="advisors">
                         <advisors::About/>
                     </CollapseItem>
-
                     <CollapseItem class="border-hidden font-oswald text-2xl text-gray-800" title="Our community champions" key="community">
                         <community::About/>
                     </CollapseItem>
-
                     <CollapseItem class="border-hidden font-oswald text-2xl text-gray-800" title="Technology & compliance" key="tech">
                         <tech_comp::About/>
                     </CollapseItem>
-
                 </Collapse>
-
             </Space>
-
         </Layout>
 
     }

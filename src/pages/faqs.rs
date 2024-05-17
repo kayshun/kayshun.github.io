@@ -9,7 +9,7 @@ use crate::Page;
 pub fn Faqs() -> impl IntoView {
     view! {
         <Title text="Kayshun - FAQs"/>
-        <Layout class="p-5">
+        <Layout class="p-5 lg:mx-96">
 
             <Space>
                 <Grid class="p-2">
@@ -17,7 +17,7 @@ pub fn Faqs() -> impl IntoView {
                         <h1 class="font-oswald text-3xl pb-4">"FAQs"</h1>
                     </GridItem>
                     <GridItem class="p-2">
-                        <p class="text-base pb-2">"We know you'll have lots of questions on our service. The following are the most commonly asked."</p>
+                        <p class="text-base pb-2">"We know you'll have lots of questions about our service. The following are the most commonly asked."</p>
 
                         <p class="text-base">"Didn't find what you are looking for? Ask away"
                         <a href=Page::ContactUs.path()
