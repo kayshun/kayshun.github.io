@@ -5,15 +5,15 @@ use crate::components::about::BioPanel;
 /// The about us page
 #[component]
 pub fn About() -> impl IntoView {
-    let show_jean = create_rw_signal(false);
-    let show_mick = create_rw_signal(false);
+    let show_one = create_rw_signal(false);
+    let show_two = create_rw_signal(false);
 
     view! {
 
     <Grid class="w-full font text-base text-gray-700">
         <GridItem class="w-full p-6 bg-gradient-to-l from-orange-500 from-3% via-orange-400 via-80% to to-orange-300">
             <p class="font-sans font-light text-base text-white">
-                <div class="mx-8">
+                <div class="mr-12">
                 "Our founders are a husband-and-wife team with a wealth of experience. While living in pre-Covid China they had a startup, which provided teachers with technical support for STEAM projects. The company offered coding solutions and supported teachers with programming small hardware devices for class projects."
                 </div>
             </p>
@@ -23,13 +23,13 @@ pub fn About() -> impl IntoView {
             <div class="container max-w-fit columns-2">
                 <div class="p-2">
                     <h3 class="font-oswald text-xl text-gray-700 p-2">"Jean Clarke"</h3>
-                    <Button variant=ButtonVariant::Link on_click=move |_| { show_jean.set(true) }>
+                    <Button variant=ButtonVariant::Link on_click=move |_| { show_one.set(true) }>
                         <Image
                             class="transition ease-in-out delay-50 hover:-translate-y-1 hover:scale-125 h-36 w-36 rounded-full"
                             src="/images/jean_headshot.jpg" width="100px" height="100px"
                         />
                     </Button>
-                    <Modal title="" width="425px" show=show_jean>
+                    <Modal title="" width="425px" show=show_one>
                         <BioPanel
                             name="Jean Clarke".to_string()
                             image_path="/images/jean_headshot.jpg".to_string()
@@ -46,13 +46,13 @@ pub fn About() -> impl IntoView {
                 </div>
                 <div class="p-2">
                     <h3 class="font-oswald text-xl text-gray-700 p-2">"Mick Clarke"</h3>
-                    <Button variant=ButtonVariant::Link on_click=move |_| { show_mick.set(true) }>
+                    <Button variant=ButtonVariant::Link on_click=move |_| { show_two.set(true) }>
                         <Image
                             class="transition ease-in-out delay-50 hover:-translate-y-1 hover:scale-125 h-36 w-36 rounded-full"
                             src="/images/mick_headshot_sepia.jpg" width="100px" height="100px"
                         />
                     </Button>
-                    <Modal title="" width="425px" show=show_mick>
+                    <Modal title="" width="425px" show=show_two>
                         <BioPanel
                             name="Mick Clarke".to_string()
                             image_path="/images/mick_headshot_sepia.jpg".to_string()
