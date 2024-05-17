@@ -1,7 +1,8 @@
 use leptos::*;
-use thaw::{Button, ButtonVariant, Grid, GridItem, Image, Modal};
+use thaw::{Button, ButtonVariant, Grid, GridItem, Icon, Image, Modal, Space};
 
 use crate::components::about::BioPanel;
+use crate::Page;
 /// The about us page
 #[component]
 pub fn About() -> impl IntoView {
@@ -76,5 +77,46 @@ pub fn About() -> impl IntoView {
             <p class="font-oswald p-2 text-sm italic">Click their image to see their bio</p>
         </GridItem>
     </Grid>
+    }
+}
+
+/// The about us page
+#[component]
+pub fn Community() -> impl IntoView {
+    view! {
+    <Space>
+        <Grid class="pt-2">
+
+            <GridItem>
+                <h2 class="font-oswald text-2xl text-gray-800 pb-3">"Join our community"</h2>
+            </GridItem>
+
+            <GridItem class="p-2">
+                <p class="text-base text-gray-700">
+                    <div class="mr-12">
+                        "We want to be a community-driven initiative that improves education through digital products that are simple to use and solve real-world issues."
+                    </div>
+                </p>
+            </GridItem>
+
+            <GridItem class="p-2">
+                <p class="text-base text-gray-700">
+                    <div class="mr-12">
+                "Please help us improve our products and make them more usable and valuable to achieve our collective goals."
+                    </div>
+                </p>
+            </GridItem>
+
+            <GridItem class="p-2">
+                <a href=Page::ContactUs.path()
+                   title="Contact us"
+                   class="text-gray-800 hover:text-orange-600 font-bold pb-2 py-1 px-3">
+                    <Icon icon=icondata::RiMailSendBusinessLine height="2.5em" width="3em"/>
+                    "Contact us"
+                </a>
+            </GridItem>
+
+        </Grid>
+    </Space>
     }
 }

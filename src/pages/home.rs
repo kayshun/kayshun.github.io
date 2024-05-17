@@ -7,20 +7,21 @@ use thaw::{Grid, GridItem, Layout, Space};
 pub fn Home() -> impl IntoView {
     view! {
         <Title text="Kayshun - Home"/>
-        <Layout>
+        <Layout class="w-full lg:max-w-6xl lg:mx-auto">
             <Space>
-            <Grid class="w-screen flex-1">
-
-                <Grid>
-
-                    <GridItem class="p-6">
-                        <h1 class="font-oswald text-center text-3xl ">"Reigniting education"</h1>
+                <Grid class="w-full text-gray-700">
+                    <GridItem class="w-full p-6">
+                        <h1 class="font-oswald text-3xl ">"Reigniting education"</h1>
                     </GridItem>
 
                     <GridItem class="pl-8 p-4 bg-gray-50">
-                        <h3 class="font-oswald text-xl pb-4">"We know students' progress needs assessment"</h3>
+                        <h3 class="font-oswald text-xl pb-4">"We know assessment drives students' progress"</h3>
 
-                        <p class="text-base pb-2 pl-2 max-w-prose">"Consistent assessment and timely feedback are vital to our students' progress. Numerous studies show that students who receive quality feedback perform better and are more engaged."</p>
+                        <p class="text-base pb-2 pl-2">
+                            <div class="mr-12">
+                                "Consistent assessment and timely feedback are vital to our students' progress. Numerous studies show that students who are regularly assessed and receive quality feedback perform better and are more engaged."
+                            </div>
+                        </p>
                     </GridItem>
 
                     <GridItem class="flex-col pl-16 pt-8 pb-8">
@@ -55,19 +56,17 @@ pub fn Home() -> impl IntoView {
 
                     <GridItem class="pl-10 pb-4">
 
-                        <p class="text-base pb-2 max-w-prose">"While we as teachers all strive for the best outcomes for our students, the pressure on our time of grading, providing quality feedback, collating those grades and creating quality reports for school administrators and parents is increasingly eating into the time we need to prepare for the most critical aspect of our profession: teaching in the classroom."</p>
+                        <p class="text-base pb-2 pl-2">
+                            <div class="mr-12">
+                                "While we as teachers all strive for the best outcomes for our students, the pressure on our time of grading, providing quality feedback, collating those grades and creating quality reports for school administrators and parents is increasingly eating into the time we need to prepare for the most critical aspect of our profession: teaching in the classroom."
+                            </div>
+                        </p>
 
                     </GridItem>
 
-                </Grid>
-
-                <Grid class="bg-gradient-to-r from-40% from-orange-400">
-
-                <GridItem class="pl-8 p-4">
+                <GridItem class="pl-8 p-4 bg-gradient-to-l from-orange-500 from-3% via-orange-400 via-80% to to-orange-300">
                     <h3 class="font-oswald text-xl text-white">"Making a difference with good technology"</h3>
-                </GridItem>
 
-                <GridItem class="pl-10 pb-4">
                     <p class="font-light text-base text-white pb-2 max-w-prose">"We have done something about the situation! We are building "<em>Edu</em>", a simple-to-use web application that makes consistent assessment, grading and giving quality feedback to students easy."</p>
 
                     <p class="font-light text-base text-white pb-2 max-w-prose">"We believe that technology can make a difference. But only if the technology is easy to use, intuitive, and doesn't add to the cognitive load on teachers. We designed "<em>Edu</em>" to be as simple to use as possible while potentially saving up to 30% of a teacher's time."</p>
@@ -76,7 +75,6 @@ pub fn Home() -> impl IntoView {
 
                 </GridItem>
 
-                </Grid>
 
                 <GridItem class="pl-8 p-4">
                     <h3 class="font-oswald text-xl ">"Kia ora, New Zealand-based teachers!"</h3>
@@ -90,7 +88,7 @@ pub fn Home() -> impl IntoView {
                 </GridItem>
 
             </Grid>
-            </Space>
-        </Layout>
+        </Space>
+    </Layout>
     }
 }

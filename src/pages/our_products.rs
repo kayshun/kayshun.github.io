@@ -1,18 +1,17 @@
 use leptos::*;
 use leptos_meta::Title;
-use thaw::{Grid, GridItem, Icon, Space};
+use thaw::{Grid, GridItem, Layout, Space};
 
-use crate::pages::Page;
+use crate::components::community;
 /// Default Home Page
 #[component]
 pub fn Edu() -> impl IntoView {
     view! {
         <Title text="Kayshun - Product"/>
-        <main class="p-5">
+        <Layout class="w-full lg:max-w-6xl lg:mx-auto">
             <Space>
-                <Grid class="p-2 max-w-prose">
-
-                    <GridItem>
+                <Grid class="w-full text-gray-700">
+                    <GridItem class="w-full p-6">
                         <h1 class="font-oswald text-3xl text-gray-800 pb-4">"Introducing "<em>Edu</em>" Kayshun*"</h1>
                     </GridItem>
 
@@ -80,34 +79,7 @@ pub fn Edu() -> impl IntoView {
                 </Grid>
             </Space>
 
-            <Space>
-                <Grid class="p-2 max-w-prose">
-
-                    <GridItem>
-                        <h2 class="font-oswald text-2xl text-gray-800 pb-3">"Join our community"</h2>
-                    </GridItem>
-
-                    <GridItem class="p-2">
-                        <p class="text-base text-gray-700">"We aim to be a community-driven initiative that collectively improves education with digital products that are simple to use and solve real-world issues. Please help us improve our products and make them more usable and valuable to achieve our collective goals."</p>
-                    </GridItem>
-
-                    <GridItem class="p-2">
-                        <p class="text-base text-gray-700">"Discover the exciting opportunity to join our community and be a part of our early users team. As an early user, you'll have the chance to shape our products and contribute to our collective goals."</p>
-                    </GridItem>
-
-                    <GridItem class="p-2">
-                        <a href=Page::ContactUs.path()
-                           title="Contact us"
-                           class="text-gray-800 hover:text-orange-600 font-bold pb-2 py-1 px-3">
-                            <Icon icon=icondata::RiMailSendBusinessLine height="2.5em" width="3em"/>
-                            "Contact us"
-                        </a>
-
-                        <p class="text-sm text-gray-500 pt-6"><i>*We all need some edukayshun, init...</i></p>
-                    </GridItem>
-
-                </Grid>
-            </Space>
-        </main>
+            <community::Community/>
+        </Layout>
     }
 }

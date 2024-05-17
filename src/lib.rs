@@ -25,7 +25,7 @@ pub fn App() -> impl IntoView {
     view! {
 
         <body>
-            <div class="flex flex-col h-screen overflow-hidden bg-orange-50">
+            <div class="flex flex-col h-screen bg-orange-50">
             <MainNavigation/>
             <Router>
                 <Layout class="mb-3 flex-1 overflow-y-scroll">
