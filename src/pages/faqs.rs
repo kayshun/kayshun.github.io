@@ -9,7 +9,7 @@ use crate::Page;
 pub fn Faqs() -> impl IntoView {
     view! {
         <Title text="Kayshun - FAQs"/>
-        <Layout class="p-5 lg:mx-96">
+        <Layout class="p-3 lg:mx-96">
 
             <Space>
                 <Grid class="p-2">
@@ -18,7 +18,40 @@ pub fn Faqs() -> impl IntoView {
                     </GridItem>
                     <GridItem class="p-2">
                         <p class="text-base pb-2">"We know you'll have lots of questions about our service. The following are the most commonly asked."</p>
+                    </GridItem>
+                </Grid>
+            </Space>
 
+            <Space>
+
+                <Collapse accordion=true class="pb-5">
+
+                    <CollapseItem class="border-hidden font-oswald text-2xl text-gray-800" title="Students and age groups" key="global">
+                        <p class="p-4 font-sans text-base text-gray-700">"Student target"</p>
+                    </CollapseItem>
+
+                    <CollapseItem class="border-hidden font-oswald text-2xl text-gray-800" title="Countries we support" key="global">
+                        <p class="p-4 font-sans text-base text-gray-700">"Rollout"</p>
+                    </CollapseItem>
+
+                    <CollapseItem class="border-none font-oswald text-2xl text-gray-800" title="Our use of AI" key="ai">
+                        <p class="p-4 font-sans text-base text-gray-700">"AI fears"</p>
+                    </CollapseItem>
+
+                    <CollapseItem class="border-none font-oswald text-2xl text-gray-800" title="Privacy and information security" key="info_sec">
+                        <p class="p-4 font-sans text-base text-gray-700">"Privacy stuff"</p>
+                    </CollapseItem>
+
+                    <CollapseItem class="border-hidden font-oswald text-2xl text-gray-800" title="Technology" key="tech">
+                        <p class="p-4 font-sans text-base text-gray-700">"A technology overview"</p>
+                    </CollapseItem>
+
+                </Collapse>
+
+            </Space>
+            <Space>
+                <Grid class="p-2">
+                    <GridItem class="p-2">
                         <p class="text-base">"Didn't find what you are looking for? Ask away"
                         <a href=Page::ContactUs.path()
                            title="Contact us"
@@ -29,30 +62,6 @@ pub fn Faqs() -> impl IntoView {
 
                     </GridItem>
                 </Grid>
-            </Space>
-
-            <Space>
-
-                <Collapse accordion=true class="pb-5">
-
-                    <CollapseItem class="border-none font-oswald text-2xl text-gray-800" title="Information security and privacy" key="info_sec">
-                        <p class="font-sans text-base text-gray-700">"Info sec stuff"</p>
-                    </CollapseItem>
-
-                    <CollapseItem class="border-none font-oswald text-2xl text-gray-800" title="Our use of AI" key="ai">
-                        "AI stuff"
-                    </CollapseItem>
-
-                    <CollapseItem class="border-hidden font-oswald text-2xl text-gray-800" title="Countries we support" key="global">
-                        "Roll out"
-                    </CollapseItem>
-
-                    <CollapseItem class="border-hidden font-oswald text-2xl text-gray-800" title="Technology" key="tech">
-                        "A technology overview"
-                    </CollapseItem>
-
-                </Collapse>
-
             </Space>
         </Layout>
     }
