@@ -24,6 +24,8 @@ impl Page {
             Self::AboutUs => "/about_us",
             Self::Faqs => "/faqs",
             Self::ContactUs => "/contact_us",
+
+            // Any other route is a 404
             Self::NotFound => "/*any",
         }
     }

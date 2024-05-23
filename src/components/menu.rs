@@ -19,7 +19,7 @@ pub fn WebMenu() -> impl IntoView {
                 title="Our products"
                 class="fill-gray-800 hover:fill-orange-600 text-gray-800 hover:text-orange-600 px-3">
                 <div class="pl-1"><KayshunSVGIcon/></div>
-                <p class="font-oswald text-sm pt-1">Product</p>
+                <p class="font-oswald text-sm pt-2">Product</p>
             </a>
 
             <a href=Page::AboutUs.path()
@@ -140,7 +140,7 @@ pub fn MobileMenu() -> impl IntoView {
 pub fn KayshunSVGIcon() -> impl IntoView {
     view! {
         <svg
-         width="30" height="28" viewBox="0 0 794 788"
+         width="32.5" height="29.5" viewBox="0 0 794 788"
          preserveAspectRatio="xMidYMid meet">
         <g transform="translate(0.000000,788.000000) scale(0.100000,-0.100000)"
         >

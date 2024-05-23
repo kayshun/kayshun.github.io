@@ -24,29 +24,29 @@ pub fn App() -> impl IntoView {
 
     view! {
 
-        <body>
-            <div class="flex flex-col h-screen bg-orange-50">
+    <body>
+        <div class="flex flex-col h-screen bg-orange-50">
             <MainNavigation/>
-            <Router>
-                <Layout class="mb-3 flex-1 overflow-y-scroll">
+            <Layout class="mb-3 flex-1 overflow-y-scroll">
                 <div class="bg-fixed bg-cover overflow-clip" style="background-image: url('./images/hs_classroom_orig.png')">
-                    <Routes>
-                        <Route path=Page::Home.path() view=Home/>
-                        <Route path=Page::OurProducts.path() view=Edu/>
-                        <Route path=Page::AboutUs.path() view=AboutUs/>
-                        <Route path=Page::Faqs.path() view=Faqs/>
-                        <Route path=Page::ContactUs.path() view=ContactUs/>
+                    <Router>
+                        <Routes>
+                            <Route path=Page::Home.path() view=Home/>
+                            <Route path=Page::OurProducts.path() view=Edu/>
+                            <Route path=Page::AboutUs.path() view=AboutUs/>
+                            <Route path=Page::Faqs.path() view=Faqs/>
+                            <Route path=Page::ContactUs.path() view=ContactUs/>
 
-                        // ------------------ 404 page handling ------------------
-                        <Route path=Page::NotFound.path() view=FouroFour />
-                    </Routes>
+                            // ------------------ 404 page handling ------------------
+                            <Route path=Page::NotFound.path() view=FouroFour />
+                        </Routes>
+                    </Router>
                 </div>
-                </Layout>
-            </Router>
-            </div>
-        </body>
-        <footer class="p-4 text-center text-xs text-gray-400 font-thin bg-orange-50">
-            {"© Copyright "}{Utc::now().year()}{" Kayshun Limited. All rights reserved."}
-        </footer>
+            </Layout>
+        </div>
+    </body>
+    <footer class="p-4 text-center text-xs text-gray-400 font-thin bg-orange-50">
+        {"© Copyright "}{Utc::now().year()}{" Kayshun Limited. All rights reserved."}
+    </footer>
     }
 }
